@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/evento_image"
+            android:layout_width="match_parent"
+            android:src="@drawable/oracao"
+            android:scaleType="fitXY"
+            android:layout_height="200dp"
+            android:adjustViewBounds="true" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.brunogcpinheiro.igrejadaunidade.helper.MyTextView
+                android:text="Início.: "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:textStyle="normal|bold|italic"
+                android:padding="5dp"
+                />
+
+            <com.brunogcpinheiro.igrejadaunidade.helper.MyTextView
+                android:id="@+id/evento_date"
+                android:text="21 de Setembro de 2016"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:textStyle="normal|italic"
+                android:padding="5dp" />
+
+        </LinearLayout>
+
+
+        <com.brunogcpinheiro.igrejadaunidade.helper.MyTextView
+            android:id="@+id/evento_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Titulo vai aqui"
+            android:padding="10dp"
+            android:textSize="25sp"
+            android:textStyle="normal|bold" />
+
+        <com.brunogcpinheiro.igrejadaunidade.helper.MyTextView
+            android:id="@+id/evento_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Existem muitas variações disponíveis de passagens de Lorem Ipsum, mas a maioria sofreu algum tipo de alteração, seja por inserção de passagens com humor, ou palavras aleatórias que não parecem nem um pouco convincentes. Se você pretende usar uma passagem de Lorem Ipsum, precisa ter certeza de que não há algo embaraçoso escrito escondido no meio do texto."
+            android:padding="10dp" />
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

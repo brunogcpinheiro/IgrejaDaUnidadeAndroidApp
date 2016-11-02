@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_versiculo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.brunogcpinheiro.igrejadaunidade.VersiculoActivity">
+
+    <ImageView
+        android:id="@+id/versImage"
+        android:src="@drawable/verse"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <com.brunogcpinheiro.igrejadaunidade.helper.MyTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Versículos"
+        android:textSize="24sp"
+        android:layout_marginLeft="5dp"
+        android:layout_alignBottom="@id/versImage"
+        android:textColor="@android:color/white"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/versiculo_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/versImage">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/insert_point"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"></LinearLayout>
+
+</RelativeLayout>

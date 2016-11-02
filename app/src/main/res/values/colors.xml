@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3498db</color>
+    <color name="colorPrimaryDark">#414141</color>
+    <color name="menuItemInfo">#2ecc71</color>
+    <color name="menuItemCelula">#f1c40f</color>
+    <color name="menuItemOracao">#c0392b</color>
+    <color name="menuItemOferta">#2c3e50</color>
+    <color name="divider">#cccccc</color>
+    <color name="colorAccent">#ffeb3b</color>
+</resources>

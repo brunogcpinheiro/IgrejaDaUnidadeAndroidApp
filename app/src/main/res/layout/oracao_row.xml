@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <com.brunogcpinheiro.igrejadaunidade.helper.MyTextView
+            android:id="@+id/oracaoAutor"
+            android:text="Autor.:"
+            android:textSize="18sp"
+            android:textStyle="bold|italic"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.brunogcpinheiro.igrejadaunidade.helper.MyTextView
+            android:id="@+id/autorOracao"
+            android:text="Bruno Giovani"
+            android:textSize="18sp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/oracaoAutor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.brunogcpinheiro.igrejadaunidade.helper.MyTextView
+            android:id="@+id/oracaoTexto"
+            android:text="Pedido.:"
+            android:textSize="18sp"
+            android:textStyle="bold|italic"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/oracaoAutor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.brunogcpinheiro.igrejadaunidade.helper.MyTextView
+            android:id="@+id/textoOracao"
+            android:text="Pedido de oração para meus familiares, amigos, discipulos e pastores da Igreja."
+            android:textSize="18sp"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@id/autorOracao"
+            android:layout_toRightOf="@id/oracaoTexto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:id="@+id/dividerMenu"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/textoOracao"
+            android:layout_marginTop="5dp"
+            android:background="@color/divider" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

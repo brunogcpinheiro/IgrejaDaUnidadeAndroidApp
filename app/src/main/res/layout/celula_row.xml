@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:id="@+id/celulaImage"
+            android:src="@drawable/house"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="20dp"/>
+
+        <com.brunogcpinheiro.igrejadaunidade.helper.MyTextView
+            android:id="@+id/anfitrioes"
+            android:text="Anfitriões.:"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="normal|bold|italic"
+            android:textSize="14sp"
+            android:layout_toRightOf="@id/celulaImage"
+            android:layout_marginLeft="15dp"/>
+
+        <com.brunogcpinheiro.igrejadaunidade.helper.MyTextView
+            android:id="@+id/celulaAnfitrioes"
+            android:text="Bruno e Renata"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="normal|bold|italic"
+            android:textSize="14sp"
+            android:layout_toRightOf="@id/anfitrioes"
+            android:layout_marginLeft="15dp"/>
+
+        <com.brunogcpinheiro.igrejadaunidade.helper.MyTextView
+            android:id="@+id/nomeDaCelula"
+            android:text="Nome.:"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/anfitrioes"
+            android:layout_toRightOf="@id/celulaImage"
+            android:textStyle="normal|bold"
+            android:textSize="16sp"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="15dp" />
+
+        <com.brunogcpinheiro.igrejadaunidade.helper.MyTextView
+            android:id="@+id/celulaNome"
+            android:text="Shekinah"
+            android:gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/anfitrioes"
+            android:layout_toRightOf="@id/nomeDaCelula"
+            android:textStyle="normal|bold"
+            android:textSize="16sp"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="15dp" />
+
+
+        <com.brunogcpinheiro.igrejadaunidade.helper.MyTextView
+            android:id="@+id/celulaLocal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/celulaNome"
+            android:padding="10dp"
+            android:text="Local.:"/>
+
+        <com.brunogcpinheiro.igrejadaunidade.helper.MyTextView
+            android:id="@+id/localCelula"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/celulaNome"
+            android:layout_toRightOf="@id/celulaLocal"
+            android:paddingTop="10dp"
+            android:text="Rua Elimas Calzado Martins, 121 - B. Olinda"/>
+
+        <com.brunogcpinheiro.igrejadaunidade.helper.MyTextView
+            android:id="@+id/celulaDiaEHora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/celulaLocal"
+            android:padding="10dp"
+            android:text="Dia e hora.:"/>
+
+        <com.brunogcpinheiro.igrejadaunidade.helper.MyTextView
+            android:id="@+id/diaEHoraCelula"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/celulaLocal"
+            android:layout_toRightOf="@id/celulaDiaEHora"
+            android:padding="10dp"
+            android:text="Quinta-feira - 19:30"/>
+
+        <com.brunogcpinheiro.igrejadaunidade.helper.MyTextView
+            android:id="@+id/celulaTelefone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/celulaDiaEHora"
+            android:padding="10dp"
+            android:text="Telefone.:"/>
+
+        <com.brunogcpinheiro.igrejadaunidade.helper.MyTextView
+            android:id="@+id/telefoneCelula"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/celulaTelefone"
+            android:layout_below="@id/diaEHoraCelula"
+            android:padding="10dp"
+            android:text="9 9104-3555"/>
+
+        <View
+            android:id="@+id/dividerMenu"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/celulaTelefone"
+            android:layout_marginTop="5dp"
+            android:background="@color/divider" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

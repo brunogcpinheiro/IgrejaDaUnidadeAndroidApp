@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.brunogcpinheiro.igrejadaunidade.helper.MyTextView
+        android:text="Insira seu pedido de oração abaixo"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/edAutor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Autor"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/edOracao"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="Pedido de oração"
+        android:gravity="top"
+        android:layout_margin="10dp"
+        android:selectAllOnFocus="false" />
+
+    <Button
+        android:id="@+id/postButton"
+        android:text="Publicar"
+        android:background="@color/colorAccent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</LinearLayout>

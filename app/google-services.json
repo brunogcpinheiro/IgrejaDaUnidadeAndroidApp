@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "192640880469",
+    "firebase_url": "https://igreja-da-unidade.firebaseio.com",
+    "project_id": "igreja-da-unidade",
+    "storage_bucket": "igreja-da-unidade.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:192640880469:android:6860c80c9a571be3",
+        "android_client_info": {
+          "package_name": "com.brunogcpinheiro.igrejadaunidade"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "192640880469-f10jlcb0oqijun5mvuef64ivr2min8lt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.brunogcpinheiro.igrejadaunidade",
+            "certificate_hash": "F4B6B743D29EB70945AEDAB51C75D26602A1A7FA"
+          }
+        },
+        {
+          "client_id": "192640880469-oieegrep0rh2vgato4k7gootcggh5oms.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZTfPZYvFTYqrrXQ1m57NjuAobKopyoVY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "192640880469-oieegrep0rh2vgato4k7gootcggh5oms.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

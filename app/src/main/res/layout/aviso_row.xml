@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <com.brunogcpinheiro.igrejadaunidade.helper.MyTextView
+                android:text="Culto do dia.: "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:textStyle="bold|italic"
+                android:padding="5dp"
+                />
+
+            <com.brunogcpinheiro.igrejadaunidade.helper.MyTextView
+                android:id="@+id/aviso_date"
+                android:text="29 de Setembro de 2016"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:padding="5dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <com.brunogcpinheiro.igrejadaunidade.helper.MyTextView
+                android:id="@+id/aviso_texto"
+                android:textSize="16sp"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <com.brunogcpinheiro.igrejadaunidade.helper.MyTextView
+                android:id="@+id/aviso_texto_2"
+                android:textSize="16sp"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <com.brunogcpinheiro.igrejadaunidade.helper.MyTextView
+                android:id="@+id/aviso_texto_3"
+                android:textSize="16sp"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <com.brunogcpinheiro.igrejadaunidade.helper.MyTextView
+                android:id="@+id/aviso_texto_4"
+                android:textSize="16sp"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <com.brunogcpinheiro.igrejadaunidade.helper.MyTextView
+                android:id="@+id/aviso_texto_5"
+                android:textSize="16sp"
+                android:text=""
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
