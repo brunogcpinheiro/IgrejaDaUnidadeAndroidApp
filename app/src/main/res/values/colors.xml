@@ -8,4 +8,5 @@
     <color name="menuItemOferta">#2c3e50</color>
     <color name="divider">#cccccc</color>
     <color name="colorAccent">#ffeb3b</color>
+    <color name="menuItemVideo">#ff1d21</color>
 </resources>

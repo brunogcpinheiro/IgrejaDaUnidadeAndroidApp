@@ -1,8 +1,12 @@
 package com.brunogcpinheiro.igrejadaunidade;
 
+/**
+ * Created by Bruno on 11/11/2016.
+ */
+
 public class Video {
 
-    private String video;
+    public String video;
 
     public Video() {
     }

@@ -2,10 +2,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.brunogcpinheiro.igrejadaunidade.fragment.VideosFragment">
+    android:id="@+id/fragVideos"
+    tools:context="com.brunogcpinheiro.igrejadaunidade.fragment.JejunsFragment">
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/videos_list"
+        android:id="@+id/jejuns_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 

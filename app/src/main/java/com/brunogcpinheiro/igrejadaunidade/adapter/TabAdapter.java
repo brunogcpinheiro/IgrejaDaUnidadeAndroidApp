@@ -6,7 +6,7 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 
 import com.brunogcpinheiro.igrejadaunidade.fragment.AvisosFragment;
 import com.brunogcpinheiro.igrejadaunidade.fragment.EventosFragment;
-import com.brunogcpinheiro.igrejadaunidade.fragment.VideosFragment;
+import com.brunogcpinheiro.igrejadaunidade.fragment.JejunsFragment;
 
 public class TabAdapter extends FragmentStatePagerAdapter{
 
@@ -29,7 +29,7 @@ public class TabAdapter extends FragmentStatePagerAdapter{
                 fragment = new EventosFragment();
                 break;
             case 2:
-                fragment = new VideosFragment();
+                fragment = new JejunsFragment();
                 break;
         }
 

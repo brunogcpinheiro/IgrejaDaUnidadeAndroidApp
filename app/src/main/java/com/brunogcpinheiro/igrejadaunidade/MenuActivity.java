@@ -14,7 +14,7 @@ import android.widget.Toast;
 public class MenuActivity extends AppCompatActivity {
 
     private TextView header;
-    private LinearLayout firstItem, secondItem, thirdItem, forthItem, fifthItem;
+    private LinearLayout firstItem, secondItem, thirdItem, forthItem, fifthItem, sixthItem;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +26,7 @@ public class MenuActivity extends AppCompatActivity {
         thirdItem = (LinearLayout) findViewById(R.id.thirdItem);
         forthItem = (LinearLayout) findViewById(R.id.forthItem);
         fifthItem = (LinearLayout) findViewById(R.id.fifthItem);
+        sixthItem = (LinearLayout) findViewById(R.id.sixthItem);
 
         firstItem.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,6 +61,14 @@ public class MenuActivity extends AppCompatActivity {
         });
 
         fifthItem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MenuActivity.this, VideoActivity.class);
+                startActivity(i);
+            }
+        });
+
+        sixthItem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(MenuActivity.this, "Serviço indisponível. Aguarde!", Toast.LENGTH_SHORT).show();

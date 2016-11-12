@@ -95,12 +95,37 @@
             </LinearLayout>
 
             <LinearLayout
+                android:orientation="horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="3dp">
+                android:layout_height="wrap_content">
 
-                <include layout="@layout/menu_item_oferta"
-                    android:id="@+id/fifthItem"/>
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="1.5dp">
+
+                        <include layout="@layout/menu_video"
+                            android:id="@+id/fifthItem" />
+                    </LinearLayout>
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginBottom="3dp"
+                            android:layout_marginLeft="1.5dp"
+                            android:layout_marginRight="3dp">
+
+                            <include layout="@layout/menu_item_oferta"
+                                android:id="@+id/sixthItem"/>
+                    </LinearLayout>
             </LinearLayout>
 
 
