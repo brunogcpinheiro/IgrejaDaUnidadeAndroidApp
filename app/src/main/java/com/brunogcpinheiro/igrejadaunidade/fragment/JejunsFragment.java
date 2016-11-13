@@ -89,6 +89,7 @@ public class JejunsFragment extends Fragment {
 //        };
 //
 //        mVideosList.setAdapter(firebaseRecyclerAdapter);
+//        firebaseRecyclerAdapter.notifyDataSetChanged():
 //        if(isOnline()){
 //            firebaseRecyclerAdapter.registerAdapterDataObserver(new RecyclerView.AdapterDataObserver() {
 //                @Override

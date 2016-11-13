@@ -85,6 +85,7 @@ public class EventosFragment extends Fragment {
         };
 
         mEventosList.setAdapter(firebaseRecyclerAdapter);
+        firebaseRecyclerAdapter.notifyDataSetChanged();
         if(isOnline()){
             firebaseRecyclerAdapter.registerAdapterDataObserver(new RecyclerView.AdapterDataObserver() {
                 @Override

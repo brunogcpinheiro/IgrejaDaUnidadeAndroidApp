@@ -81,7 +81,7 @@ public class OracaoActivity extends AppCompatActivity {
         };
 
         mOracoesList.setAdapter(firebaseRecyclerAdapter);
-        firebaseRecyclerAdapter.notifyItemChanged(0);
+        firebaseRecyclerAdapter.notifyDataSetChanged();
         if(isOnline()){
             firebaseRecyclerAdapter.registerAdapterDataObserver(new RecyclerView.AdapterDataObserver() {
                 @Override

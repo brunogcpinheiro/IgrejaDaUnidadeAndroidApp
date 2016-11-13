@@ -14,7 +14,7 @@
 
     <com.brunogcpinheiro.igrejadaunidade.helper.MyTextView
         android:id="@+id/menuTitle"
-        android:text="Versículos"
+        android:text="Vídeos"
         android:layout_gravity="center"
         android:textSize="18sp"
         android:textColor="@android:color/white"

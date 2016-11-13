@@ -6,9 +6,34 @@
     android:layout_height="match_parent"
     tools:context="com.brunogcpinheiro.igrejadaunidade.VideoActivity">
 
+    <ImageView
+        android:id="@+id/videoImage"
+        android:src="@drawable/video_img"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
+    <com.brunogcpinheiro.igrejadaunidade.helper.MyTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vídeos"
+        android:textSize="24sp"
+        android:layout_marginLeft="5dp"
+        android:layout_alignBottom="@id/videoImage"
+        android:textColor="@android:color/white"/>
+
     <android.support.v7.widget.RecyclerView
         android:id="@+id/videos_list"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:layout_below="@id/videoImage"/>
+
+    <LinearLayout
+        android:id="@+id/insert_point"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"></LinearLayout>
 
 </RelativeLayout>

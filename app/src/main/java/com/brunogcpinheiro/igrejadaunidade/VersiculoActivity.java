@@ -69,7 +69,7 @@ public class VersiculoActivity extends AppCompatActivity {
         };
 
         mVersiculoList.setAdapter(firebaseRecyclerAdapter);
-        firebaseRecyclerAdapter.notifyItemChanged(0);
+        firebaseRecyclerAdapter.notifyDataSetChanged();
 
         if(isOnline()){
             firebaseRecyclerAdapter.registerAdapterDataObserver(new RecyclerView.AdapterDataObserver() {
