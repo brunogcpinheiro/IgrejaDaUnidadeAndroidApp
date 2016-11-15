@@ -54,6 +54,7 @@ public class VideoActivity extends AppCompatActivity {
         progressDialog.setMessage("Carregando...");
         progressDialog.show();
         progressDialog.setCanceledOnTouchOutside(false);
+        progressDialog.setCancelable(false);
         mVideosList.smoothScrollToPosition(0);
         final FirebaseRecyclerAdapter<Video, VideoViewHolder> adapter =
                 new FirebaseRecyclerAdapter<Video, VideoViewHolder>(

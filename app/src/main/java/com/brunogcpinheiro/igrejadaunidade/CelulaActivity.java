@@ -39,6 +39,8 @@ public class CelulaActivity extends AppCompatActivity {
         mCelulaList.setHasFixedSize(true);
         LinearLayoutManager mLayoutManager = new LinearLayoutManager(this);
         mCelulaList.setLayoutManager(mLayoutManager);
+        mLayoutManager.setReverseLayout(true);
+        mLayoutManager.setStackFromEnd(true);
     }
 
     @Override
@@ -48,6 +50,7 @@ public class CelulaActivity extends AppCompatActivity {
         progressDialog.setMessage("Carregando...");
         progressDialog.show();
         progressDialog.setCanceledOnTouchOutside(false);
+        progressDialog.setCancelable(false);
         mCelulaList.smoothScrollToPosition(0);
 
         FirebaseRecyclerAdapter<Celula, CelulaActivity.CelulaViewHolder> firebaseRecyclerAdapter = new FirebaseRecyclerAdapter<Celula, CelulaViewHolder>(

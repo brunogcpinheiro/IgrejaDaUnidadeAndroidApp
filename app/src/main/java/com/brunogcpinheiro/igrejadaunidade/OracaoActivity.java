@@ -63,6 +63,7 @@ public class OracaoActivity extends AppCompatActivity {
         progressDialog.setMessage("Carregando...");
         progressDialog.show();
         progressDialog.setCanceledOnTouchOutside(false);
+        progressDialog.setCancelable(false);
         mOracoesList.smoothScrollToPosition(0);
 
         FirebaseRecyclerAdapter<Oracao, OracaoActivity.OracaoViewHolder> firebaseRecyclerAdapter = new FirebaseRecyclerAdapter<Oracao, OracaoViewHolder>(

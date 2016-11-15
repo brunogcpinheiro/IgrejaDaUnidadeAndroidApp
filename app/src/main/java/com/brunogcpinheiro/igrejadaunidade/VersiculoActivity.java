@@ -50,6 +50,7 @@ public class VersiculoActivity extends AppCompatActivity {
         progressDialog.setMessage("Carregando...");
         progressDialog.show();
         progressDialog.setCanceledOnTouchOutside(false);
+        progressDialog.setCancelable(false);
         mVersiculoList.smoothScrollToPosition(0);
 
         FirebaseRecyclerAdapter<Versiculo, VersiculoActivity.VersiculoViewHolder> firebaseRecyclerAdapter = new FirebaseRecyclerAdapter<Versiculo, VersiculoViewHolder>(
