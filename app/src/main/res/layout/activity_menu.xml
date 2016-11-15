@@ -5,7 +5,6 @@
     android:id="@+id/activity_menu"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white"
     android:weightSum="1"
     tools:context="com.brunogcpinheiro.igrejadaunidade.MenuActivity">
 
@@ -13,26 +12,24 @@
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="50dp"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:background="@android:color/white"
             android:minHeight="?attr/actionBarSize"
             android:theme="?attr/actionBarTheme">
 
-            <TextView
+            <com.brunogcpinheiro.igrejadaunidade.helper.MyTextView
                 android:id="@+id/header"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignLeft="@+id/dividerMenu"
                 android:layout_alignParentTop="true"
                 android:layout_alignStart="@+id/dividerMenu"
-                android:layout_marginTop="11dp"
                 android:text="Igreja da Unidade - Uberaba/MG"
                 android:textAllCaps="true"
-                android:textColor="@color/colorPrimary"
-                android:textSize="12sp" />
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
 
         </android.support.v7.widget.Toolbar>
 
@@ -42,19 +39,20 @@
             android:layout_height="1dp"
             android:layout_below="@id/toolbar"
             android:layout_marginTop="-5dp"
-            android:background="@color/colorPrimary" />
+            android:background="@android:color/black" />
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@id/dividerMenu">
+        android:layout_below="@id/dividerMenu"
+        android:layout_marginTop="5dp">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
             <LinearLayout

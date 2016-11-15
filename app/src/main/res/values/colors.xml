@@ -9,4 +9,5 @@
     <color name="divider">#cccccc</color>
     <color name="colorAccent">#ffeb3b</color>
     <color name="menuItemVideo">#ff1d21</color>
+    <color name="background">#d4eeff</color>
 </resources>
