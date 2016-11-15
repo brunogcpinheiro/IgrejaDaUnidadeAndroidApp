@@ -40,7 +40,7 @@
             android:padding="10dp">
 
             <com.brunogcpinheiro.igrejadaunidade.helper.MyTextView
-                android:text="Termina em.: "
+                android:text="Término em.: "
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="12sp"
