@@ -10,7 +10,7 @@ import com.brunogcpinheiro.igrejadaunidade.fragment.JejunsFragment;
 
 public class TabAdapter extends FragmentStatePagerAdapter{
 
-    private String[] mTituloAbas = {"AVISOS", "EVENTOS", "VÍDEOS"};
+    private String[] mTituloAbas = {"AVISOS", "EVENTOS", "JEJUNS"};
 
     public TabAdapter(FragmentManager fm) {
         super(fm);

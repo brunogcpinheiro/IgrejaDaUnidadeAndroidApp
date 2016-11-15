@@ -36,7 +36,7 @@
                 android:text="21 de Setembro de 2016"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="10sp"
+                android:textSize="14sp"
                 android:textStyle="normal|italic"
                 android:padding="5dp" />
 

@@ -26,7 +26,6 @@ import com.squareup.picasso.Picasso;
 
 import static com.brunogcpinheiro.igrejadaunidade.R.id.aviso_date;
 import static com.brunogcpinheiro.igrejadaunidade.R.id.aviso_texto;
-import static com.brunogcpinheiro.igrejadaunidade.R.id.aviso_texto_2;
 import static com.brunogcpinheiro.igrejadaunidade.R.id.evento_desc;
 import static com.brunogcpinheiro.igrejadaunidade.R.id.evento_title;
 
@@ -85,10 +84,6 @@ public class AvisosFragment extends Fragment {
             protected void populateViewHolder(AvisosFragment.AvisoViewHolder viewHolder, Aviso model, int position) {
                 viewHolder.setDate(model.getDate());
                 viewHolder.setAviso(model.getAviso());
-                viewHolder.setAviso2(model.getAviso2());
-                viewHolder.setAviso3(model.getAviso3());
-                viewHolder.setAviso4(model.getAviso4());
-                viewHolder.setAviso5(model.getAviso5());
             }
         };
 
@@ -111,7 +106,7 @@ public class AvisosFragment extends Fragment {
 
             // fill in any details dynamically here
             TextView textView = (TextView) v.findViewById(R.id.error);
-            textView.setText("Não foi possível cerregar. Sem conexão com a Internet :(");
+            textView.setText("Não foi possível cerregar. Sem conexão com a Internet. Conecte-se e entre novamente :)");
 
             // insert into main view
             ViewGroup insertPoint = (ViewGroup) getView().findViewById(R.id.insert_point);
@@ -140,26 +135,6 @@ public class AvisosFragment extends Fragment {
         public void setAviso(String aviso){
             TextView aviso_texto = (TextView) mView.findViewById(R.id.aviso_texto);
             aviso_texto.setText(aviso);
-        }
-
-        public void setAviso2(String aviso2){
-            TextView aviso_texto_2 = (TextView) mView.findViewById(R.id.aviso_texto_2);
-            aviso_texto_2.setText(aviso2);
-        }
-
-        public void setAviso3(String aviso3){
-            TextView aviso_texto_3 = (TextView) mView.findViewById(R.id.aviso_texto_3);
-            aviso_texto_3.setText(aviso3);
-        }
-
-        public void setAviso4(String aviso4){
-            TextView aviso_texto_4 = (TextView) mView.findViewById(R.id.aviso_texto_4);
-            aviso_texto_4.setText(aviso4);
-        }
-
-        public void setAviso5(String aviso5){
-            TextView aviso_texto_5 = (TextView) mView.findViewById(R.id.aviso_texto_5);
-            aviso_texto_5.setText(aviso5);
         }
     }
 

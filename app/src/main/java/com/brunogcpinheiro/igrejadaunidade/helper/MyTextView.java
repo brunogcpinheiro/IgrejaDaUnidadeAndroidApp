@@ -24,7 +24,7 @@ public class MyTextView extends TextView {
 
     private void init() {
         if (!isInEditMode()) {
-            Typeface tf = Typeface.createFromAsset(getContext().getAssets(), "Raleway-Medium.ttf");
+            Typeface tf = Typeface.createFromAsset(getContext().getAssets(), "AvenirLTStd-Light.otf");
             setTypeface(tf);
         }
     }

@@ -99,7 +99,7 @@ public class OracaoActivity extends AppCompatActivity {
 
             // fill in any details dynamically here
             TextView textView = (TextView) v.findViewById(R.id.error);
-            textView.setText("Não foi possível cerregar. Sem conexão com a Internet :(");
+            textView.setText("Não foi possível cerregar. Sem conexão com a Internet. Conecte-se e entre novamente :)");
 
             // insert into main view
             ViewGroup insertPoint = (ViewGroup) findViewById(R.id.insert_point);

@@ -71,7 +71,8 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/celulaNome"
             android:padding="10dp"
-            android:text="Local.:"/>
+            android:text="Local.:"
+            android:textStyle="bold"/>
 
         <com.brunogcpinheiro.igrejadaunidade.helper.MyTextView
             android:id="@+id/localCelula"
@@ -88,7 +89,8 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/celulaLocal"
             android:padding="10dp"
-            android:text="Dia e hora.:"/>
+            android:text="Dia e hora.:"
+            android:textStyle="bold"/>
 
         <com.brunogcpinheiro.igrejadaunidade.helper.MyTextView
             android:id="@+id/diaEHoraCelula"
@@ -105,7 +107,8 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/celulaDiaEHora"
             android:padding="10dp"
-            android:text="Telefone.:"/>
+            android:text="Telefone.:"
+            android:textStyle="bold"/>
 
         <com.brunogcpinheiro.igrejadaunidade.helper.MyTextView
             android:id="@+id/telefoneCelula"

@@ -64,6 +64,8 @@ public class VideoActivity extends AppCompatActivity {
                 ) {
                     @Override
                     protected void populateViewHolder(VideoViewHolder viewHolder, final Video model, int position) {
+                        viewHolder.setVideo_desc(model.getVideo_desc());
+                        viewHolder.setVideo_date(model.getVideo_date());
                         viewHolder.youTubeThumbnailView.initialize(GOOGLE_KEY, new YouTubeThumbnailView.OnInitializedListener() {
                             @Override
                             public void onInitializationSuccess(YouTubeThumbnailView youTubeThumbnailView, YouTubeThumbnailLoader youTubeThumbnailLoader) {
@@ -105,7 +107,7 @@ public class VideoActivity extends AppCompatActivity {
 
             // fill in any details dynamically here
             TextView textView = (TextView) v.findViewById(R.id.error);
-            textView.setText("Não foi possível cerregar. Sem conexão com a Internet :(");
+            textView.setText("Não foi possível cerregar. Sem conexão com a Internet. Conecte-se e entre novamente :)");
 
             // insert into main view
             ViewGroup insertPoint = (ViewGroup) findViewById(R.id.insert_point);
@@ -115,10 +117,22 @@ public class VideoActivity extends AppCompatActivity {
 
     public static class VideoViewHolder extends RecyclerView.ViewHolder {
         YouTubeThumbnailView youTubeThumbnailView;
+        View mView;
 
         public VideoViewHolder(View v) {
             super(v);
+            mView = v;
             youTubeThumbnailView = (YouTubeThumbnailView) v.findViewById(R.id.youtube_thumbnail);
+        }
+
+        public void setVideo_desc(String desc){
+            TextView video_desc = (TextView) mView.findViewById(R.id.video_text);
+            video_desc.setText(desc);
+        }
+
+        public void setVideo_date(String date){
+            TextView video_date = (TextView) mView.findViewById(R.id.video_date);
+            video_date.setText(date);
         }
     }
 
