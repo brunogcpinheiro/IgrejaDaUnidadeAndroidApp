@@ -4,7 +4,7 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:text="Não foi possível cerregar. Sem conexão com a Internet :("
+        android:text=""
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/error"
